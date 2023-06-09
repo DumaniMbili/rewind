@@ -1,0 +1,172 @@
+/* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #000000;
+  font-size: 14px;
+}
+
+.container {
+  width: 80%;
+  margin: 50px auto;
+}
+
+.about-author-box {
+  background: #000000;
+  display: flex;
+}
+
+.abt-auth-left {
+  flex-basis: 60%;
+  padding: 40px 60px;
+}
+
+.about-auth-right {
+  flex-basis: 40%;
+  padding: 40px;
+  background: #000000;
+  color: #fff;
+}
+
+.about-rewind-box {
+  background: #000000;
+  display: flex;
+}
+
+.abt-rew-left {
+  flex-basis: 60%;
+  padding: 40px 60px;
+  background: #000000;
+  color: #fff;
+  min-height: 100px;
+}
+
+.abt-rew-right {
+  flex-basis: 40%;
+  padding: 40px;
+}
+
+p {
+  color: #fff;
+}
+
+p.slide-in-left,
+p.slide-in-right {
+  opacity: 0;
+}
+
+p.slide-in-left {
+  animation: slide-in-left 0.5s ease-in-out forwards;
+  transition: opacity 0.5s ease-in-out;
+}
+
+p.slide-in-right {
+  animation: slide-in-left 0.5s ease-in-out forwards;
+  transition: opacity 0.5s ease-in-out;
+}
+
+p.slide-in-visible {
+  opacity: 1;
+}
+
+.author,
+.rewind {
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.author.fade-in,
+.rewind.fade-in {
+  opacity: 1;
+}
+
+@keyframes slide-in-left {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Add a new keyframes animation for sliding in from the right */
+@keyframes slide-in-right {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+
+  .abt-auth-left,
+  .abt-rew-left {
+    padding: 20px;
+  }
+
+  .about-auth-right,
+  .abt-rew-right {
+    padding: 20px;
+  }
+  
+  .about-author-box,
+  .about-rewind-box {
+    flex-wrap: wrap;
+  }
+  
+  .abt-auth-left,
+  .abt-rew-left {
+    flex-basis: 100%;
+  }
+  
+  .about-auth-right,
+  .abt-rew-right {
+    flex-basis: 100%;
+    margin-top: 20px;
+  }
+
+  .abt-rew-left {
+    order: 2;
+  }
+
+  .abt-rew-right {
+    order: 1;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    width: 95%;
+  }
+
+  .abt-auth-left,
+  .abt-rew-left {
+    padding: 10px;
+  }
+
+  .about-auth-right,
+  .abt-rew-right {
+    padding: 10px;
+  }
+
+  
+  
+  .abt-auth-left img,
+  .abt-rew-right img {
+    width: 50%;
+  }
+}

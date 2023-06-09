@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #000000;
+  color: #fff;
+}
+
+.container {
+  width: 80%;
+  margin: 50px auto;
+}
+
+.sip-box,
+.poetry-box,
+.jazz-box {
+  display: flex;
+}
+
+.sip-left,
+.poetry-left,
+.jazz-left {
+  flex-basis: 60%;
+  padding: 40px 60px;
+}
+
+.sip-right,
+.poetry-right,
+.jazz-right {
+  flex-basis: 40%;
+  padding: 40px;
+}
+
+.sip-right,
+.poetry-left,
+.jazz-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image {
+  border-radius: 5px;
+}
+
+.modal-trigger {
+  cursor: pointer;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  display: flex;
+  background-color: #36454f;
+  color: #fff;
+  border-radius: 5px;
+  width: 80%;
+  max-width: 600px;
+  padding: 20px;
+  text-align: center;
+}
+
+.modal-left {
+  flex-basis: 40%;
+  padding: 40px 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-left img {
+  border-radius: 5px;
+  max-width: 200%;
+  max-height: 100%;
+  height: auto;
+  width: auto;
+  display: block;
+  margin: 0 auto;
+  object-fit: contain;
+}
+
+.modal-right {
+  flex-basis: 60%;
+  padding: 40px;
+}
+
+.go-to-gallery,
+.go-to-socials,
+.modal-close {
+  background: #fff;
+  border-radius: 5px;
+  padding: 4px 20px;
+  border: none;
+  color: #000000;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  margin-right: 10px; /* Adjust the margin-right value for horizontal spacing */
+  margin-bottom: 10px; /* Add margin-bottom for vertical spacing */
+  padding: 10px 20px;
+}
+
+.go-to-gallery:hover,
+.go-to-socials:hover,
+.modal-close:hover {
+  background: #000000;
+  color: #fff;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 768px) {
+  .sip-box,
+  .poetry-box,
+  .jazz-box {
+    flex-direction: column;
+  }
+
+  .sip-left,
+  .poetry-left,
+  .jazz-left,
+  .sip-right,
+  .poetry-right,
+  .jazz-right {
+    flex-basis: 100%;
+    padding: 20px;
+  }
+
+  .poetry-left {
+    order: 2;
+  }
+
+  .poetry-right {
+    order: 1;
+  }
+
+  .image {
+    max-width: 50%;
+  }
+
+  .modal-content {
+    flex-direction: column;
+  }
+
+  .modal-left,
+  .modal-right {
+    flex-basis: 100%;
+    padding: 20px;
+  }
+  
+  .modal-left img {
+    max-width: 50%;
+    max-height: 50%;
+  }
+}

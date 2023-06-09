@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rewind</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/gallery.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">Rewind</div>
+      <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <nav class="nav-bar">
+        <ul>
+          <li>
+            <a href="./gallery.html" class="active">Gallery</a>
+          </li>
+          <li>
+            <a href="../index.html">Home</a>
+          </li>
+          <li>
+            <a href="./about.html">About</a>
+          </li>
+          <li>
+            <a href="./events.html">Events</a>
+          </li>
+          <li>
+            <a href="./contact.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section>
+      <div class="full-img" id="fullImgBox">
+        <i
+          class="fas fa-arrow-left button"
+          id="prev"
+          onclick="slideImage(-1)"
+        ></i>
+        <img src="../images/gallery/rewind/image01.png" id="fullImg" />
+        <i
+          class="fas fa-arrow-right button"
+          id="next"
+          onclick="slideImage(1)"
+        ></i>
+        <span onclick="closeFullImg()">X</span>
+      </div>
+      <div class="img-gallery">
+        <img
+          src="../images/gallery/rewind/image01.png"
+          onclick="openFullImg(this.src)"
+        />
+        <img
+          src="../images/gallery/rewind/image02.png"
+          onclick="openFullImg(this.src)"
+        />
+        <img
+          src="../images/gallery/rewind/image03.png"
+          onclick="openFullImg(this.src)"
+        />
+        <img
+          src="../images/gallery/rewind/image04.png"
+          onclick="openFullImg(this.src)"
+        />
+        <img
+          src="../images/gallery/rewind/image05.png"
+          onclick="openFullImg(this.src)"
+        />
+        <img
+          src="../images/gallery/rewind/image06.png"
+          onclick="openFullImg(this.src)"
+        />
+        <img
+          src="../images/gallery/rewind/image07.png"
+          onclick="openFullImg(this.src)"
+        />
+        <img
+          src="../images/gallery/rewind/image08.png"
+          onclick="openFullImg(this.src)"
+        />
+        <img
+          src="../images/gallery/rewind/image09.png"
+          onclick="openFullImg(this.src)"
+        />
+        <img
+          src="../images/gallery/rewind/image10.png"
+          onclick="openFullImg(this.src)"
+        />
+        <img
+          src="../images/gallery/rewind/image11.png"
+          onclick="openFullImg(this.src)"
+        />
+        <img
+          src="../images/gallery/rewind/image12.png"
+          onclick="openFullImg(this.src)"
+        />
+        <img
+          src="../images/gallery/rewind/image13.png"
+          onclick="openFullImg(this.src)"
+        />
+        <img
+          src="../images/gallery/rewind/image14.png"
+          onclick="openFullImg(this.src)"
+        />
+        <img
+          src="../images/gallery/rewind/image15.png"
+          onclick="openFullImg(this.src)"
+        />
+        <img
+          src="../images/gallery/rewind/image16.png"
+          onclick="openFullImg(this.src)"
+        />
+      </div>
+    </section>
+
+    <section class="footer-section">
+      <footer class="main-footer">
+        <div class="footer-links">
+          <a href="www.facebook.com">
+            <img src="../images/icons/facebook-icon.png" alt="facebook" />
+            Facebook
+          </a>
+          <a href="www.instagram.com">
+            <img src="../images/icons/instagram-icon.png" alt="instagram" />
+            Instagram
+          </a>
+          <a href="mailto:cristellebarbeau4@gmail.com">
+            <img src="../images/icons/gmail-icon.png" alt="Gmail" />
+            cristellebarbeau4@gmail.com
+          </a>
+          <a href="tel:0765564827">
+            <img src="../images/icons/call-icon.png" alt="Call" />
+            076 556 4827
+          </a>
+        </div>
+      </footer>
+    </section>
+    <script src="../js/script.js"></script>
+    <script src="../js/gallery.js"></script>
+  </body>
+</html>
