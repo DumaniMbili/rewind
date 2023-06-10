@@ -121,6 +121,7 @@ header {
 }
 
 
+
 @media only screen and (max-width: 1100px) {
     header {
         padding: 0 30px;
@@ -171,4 +172,52 @@ header {
         
     }
     
+}
+
+/* Media queries for responsive footer section */
+
+/* Small smartphones */
+@media only screen and (max-width: 480px) {
+  .footer-section {
+    padding: 0.5em;
+  }
+
+  .footer-links a {
+    font-size: 0.8em;
+    margin: 0 0.5em;
+  }
+
+  .footer-links img {
+    width: 1.5em;
+    height: 1.5em;
+    margin-bottom: 0.3em;
+  }
+}
+
+/* Landscape orientation tablets and larger smartphones */
+@media only screen and (max-width: 768px) and (orientation: landscape) {
+  .footer-section {
+    padding: 0.8em;
+  }
+
+  .footer-links a {
+    margin: 0 0.8em;
+  }
+}
+
+/* Portrait orientation tablets */
+@media only screen and (max-width: 768px) and (orientation: portrait) {
+  .footer-section {
+    padding: 0.8em;
+  }
+
+  .footer-links a {
+    margin: 0 0.8em;
+  }
+
+  .footer-links img {
+    width: 1.8em;
+    height: 1.8em;
+    margin-bottom: 0.4em;
+  }
 }
