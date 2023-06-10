@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Roboto-Medium";
+  src: url(../fonts/Roboto/Roboto-Medium.ttf);
+}
+
 *{
    padding: 0;
    margin: 0;
@@ -8,6 +13,7 @@
 
 body{
     background: #fefefe;
+    font-family: "Roboto-Medium", sans-serif;
 }
 
 header {
@@ -22,10 +28,16 @@ header {
 
 
 .logo {
-    font-size: 28px;
-    font-weight: bold;
-    color: #fefefe; 
+  display: flex;
+  justify-content: center; /* Centers the image horizontally */
+  align-items: center; /* Centers the image vertically */
+  margin-top: 20px; /* Adjust the top margin value as needed */
+  margin-bottom: 20px; /* Adjust the bottom margin value as needed */
+}
 
+.logo img {
+  width: 100px; /* Adjust the width of the image as needed */
+  height: auto; /* Allows the image to scale proportionally */
 }
 
 .hamburger {
@@ -72,23 +84,23 @@ header {
 
 .footer-section {
   margin-top: 2em;
-  background-color: #8cb5ad;
+  background-color: #36454F;
   padding: 1em;
 }
 
 
 .main-footer {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column; /* Set the direction to column */
   align-items: center;
 }
 
 .footer-links {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
+  margin-bottom: 20px; /* Add margin at the bottom */
+  color: #fff;
 }
 
 .footer-links a {
@@ -98,19 +110,23 @@ header {
   align-items: center;
   margin: 0 1em;
   text-decoration: none;
-  color: #333;
+  color: #fff;
   font-size: 1em;
- 
 }
 
 .footer-links a:hover {
-  color: #0077b5;
+  color: #fff;
 }
 
 .footer-links img {
   width: 2em;
   height: 2em;
   margin-bottom: 0.5em;
+}
+
+.footer-links p {
+  color: #fff;
+  font-size: 0.8em; /* Adjust the font size as needed */
 }
 
 @media only screen and (max-width: 1320px) {
