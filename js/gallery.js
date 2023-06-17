@@ -1,20 +1,21 @@
 var images = [
-  "../images/gallery/rewind/image01.png",
-  "../images/gallery/rewind/image02.png",
-  "../images/gallery/rewind/image03.png",
-  "../images/gallery/rewind/image04.png",
-  "../images/gallery/rewind/image05.png",
-  "../images/gallery/rewind/image06.png",
-  "../images/gallery/rewind/image07.png",
-  "../images/gallery/rewind/image08.png",
-  "../images/gallery/rewind/image09.png",
-  "../images/gallery/rewind/image10.png",
-  "../images/gallery/rewind/image11.png",
-  "../images/gallery/rewind/image12.png",
-  "../images/gallery/rewind/image13.png",
-  "../images/gallery/rewind/image14.png",
-  "../images/gallery/rewind/image15.png",
-  "../images/gallery/rewind/image16.png"
+  "../images/gallery/rewind/sip-and-paint/DSC_8137.jpg",
+"../images/gallery/rewind/sip-and-paint/DSC_8141.jpg",
+"../images/gallery/rewind/sip-and-paint/DSC_8142.jpg",
+"../images/gallery/rewind/sip-and-paint/DSC_8150.jpg",
+"../images/gallery/rewind/sip-and-paint/DSC_8162.jpg", 
+"../images/gallery/rewind/sip-and-paint/DSC_8169.jpg",
+"../images/gallery/rewind/sip-and-paint/DSC_8173.jpg",
+"../images/gallery/rewind/sip-and-paint/DSC_8183.jpg",
+"../images/gallery/rewind/sip-and-paint/DSC_8211.jpg",
+"../images/gallery/rewind/sip-and-paint/DSC_8214.jpg",
+"../images/gallery/rewind/sip-and-paint/DSC_8241.jpg",
+"../images/gallery/rewind/sip-and-paint/DSC_8248-2.jpg",
+"../images/gallery/rewind/sip-and-paint/DSC_8248.jpg",
+"../images/gallery/rewind/sip-and-paint/DSC_8250.jpg",
+"../images/gallery/rewind/sip-and-paint/DSC_8267.jpg",
+"../images/gallery/rewind/sip-and-paint/DSC_8288.jpg",
+          
 ]; 
 
 var currentIndex = 0; 

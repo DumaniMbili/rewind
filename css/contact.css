@@ -106,6 +106,15 @@ tr td {
   padding-top: 20px;
 }
 
+.icons {
+  width: 20px;
+  height: 20px;
+}
+
+.links a {
+  color: #fff;
+}
+
 .newsletter {
   display: flex;
   align-items: center;

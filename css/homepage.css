@@ -49,6 +49,9 @@ p.hero-secondary {
     color: #fff;
 }
 
+p {
+  color: #fff;
+}
 .container {
     width: 80%;
     margin: 50px auto;
