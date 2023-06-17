@@ -42,6 +42,15 @@ body {
 
 .modal-trigger {
   cursor: pointer;
+  padding: 10px 25px;
+    border-radius: 50px;
+    transition: 0.2s;
+    margin: 0 5px;
+}
+
+.modal-trigger:hover {
+  color: #11101b;
+  background: #fefefe;
 }
 
 .modal {
