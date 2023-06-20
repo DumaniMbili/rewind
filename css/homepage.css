@@ -46,8 +46,17 @@ p.cta-info {
 }
 
 p.hero-secondary {
-    color: #fff;
+  color: #fff;
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 1s, transform 1s;
 }
+
+p.hero-secondary.slide-in {
+  opacity: 1;
+  transform: translateX(0);
+}
+
 
 p {
   color: #fff;
