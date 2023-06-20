@@ -85,6 +85,10 @@ body {
   justify-content: center;
 }
 
+.modal-right p {
+  margin-bottom: 20px;
+}
+
 .modal-left img {
   border-radius: 5px;
   max-width: 200%;

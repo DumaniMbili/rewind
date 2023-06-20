@@ -7,10 +7,10 @@ hamburger.onclick = function () {
 
 
 // Replace "YOUR_PHONE_NUMBER" with your actual phone number, including the country code
-const phoneNumber = "076 556 4827";
+const phoneNumber = "0765564827";
 
 // Replace "YOUR_DEFAULT_MESSAGE" with the default message you want to send
-const defaultMessage = "Please feel free to give us a chat if you want to know anything 'Rewind'. ";
+const defaultMessage = "Hello, what would you love to know about Rewind?";
 
 const whatsappBot = document.querySelector(".whatsapp-bot");
 
