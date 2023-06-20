@@ -18,15 +18,20 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  const goToSocialsButton = document.querySelector(".go-to-socials");
+  const goToSocialsButtons = document.querySelectorAll(".go-to-socials");
 
-  goToSocialsButton.addEventListener("click", function () {
-    window.location.href = "https://www.instagram.com/sa_rewind/";
+  goToSocialsButtons.forEach(function (button) {
+    button.addEventListener("click", function () {
+      window.location.href =
+        "https://linktr.ee/3wind?utm_source=linktree_admin_share";
+    });
   });
 
-  const goToGalleryButton = document.querySelector(".go-to-gallery");
+  const goToGalleryButtons = document.querySelectorAll(".go-to-gallery");
 
-  goToGalleryButton.addEventListener("click", function () {
-    window.location.href = "../pages/gallery.html";
+  goToGalleryButtons.forEach(function (button) {
+    button.addEventListener("click", function () {
+      window.location.href = "../pages/gallery.html";
+    });
   });
 });
